@@ -10,7 +10,23 @@
 
     <?php include_once 'partials/header.php';?>
 
-    <?php include_once 'partials/novidades.php';?>
+  <main>
+    
+    <aside>
+      <ul>
+        <li>Categorias</li>
+        <li>Tamanhos</li>
+        <li>Cores</li>
+        <li>Preço</li>
+      </ul>
+    </aside>
+
+    <section class='div-main'>
+      <h2>Produtos</h2>
+      <p>Conteúdo principal aqui.</p>
+    </section>
+
+  </main>
 
     <?php include_once 'partials/footer.php';?>
 

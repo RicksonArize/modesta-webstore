@@ -1,0 +1,98 @@
+/* ====== RESET / BASE ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ====== MENU SUPERIOR ====== */
+header {
+  background-color: #222;
+  color: #fff;
+}
+
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu .logo {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu-links a:hover {
+  color: #00bcd4;
+}
+
+main{
+  display: flex;
+}
+
+aside{
+  flex: 1; /* Faz o main ocupar o espaço restante */
+  /* max-width: 1200px; */
+  margin: 2rem  ;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* ====== MAIN ====== */
+.div-main{
+  flex: 5; /* Faz o main ocupar o espaço restante */
+  /* max-width: 1200px; */
+  margin: 2rem 2rem 2rem 0;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #222;
+  color: #fff;
+  margin-top: auto; /* Faz o footer “grudar” no final */
+}
+
+/* ====== BOAS PRÁTICAS ======
+1. Use Flexbox no body para manter o footer no fim da página.
+2. Evite usar position: absolute/fixed para o footer — quebra o fluxo natural.
+3. Use margin-top: auto para empurrar o footer.
+4. Use flex: 1 no main para ocupar o espaço restante.
+================================*/

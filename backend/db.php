@@ -1,6 +1,6 @@
 <?php
 
-include_once './config.php';
+include_once 'config.php';
 
 $db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_SCHEMA);
 
